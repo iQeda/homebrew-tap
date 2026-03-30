@@ -1,11 +1,11 @@
 cask "mydashboard" do
-  version "0.10.0"
-  sha256 "73d47585f13260d940221450528cd3d46b6044e3ee8a3d0c14de31866ed975c5"
+  version "0.10.1"
+  sha256 "eb74328e62bee3fc4a9a4dca3d2fd7aebc1c119a1cd6f9d68b412ce44d066019"
 
   url "https://github.com/iQeda/my-dashboard-app/releases/download/v#{version}/MyDashboard.app.tar.gz"
   name "MyDashboard"
   desc "Mac app/site launcher dashboard"
-  homepage "https://iqeda.github.io/my-dashboard-app/"
+  homepage "https://github.com/iQeda/my-dashboard-app"
 
   depends_on macos: ">= :ventura"
   depends_on arch: :arm64
