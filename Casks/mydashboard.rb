@@ -1,6 +1,6 @@
 cask "mydashboard" do
-  version "0.11.0"
-  sha256 "230669bededa0ae178024bca4bf2a7d81422b15c9112e7c8b02c49beec58c915"
+  version "0.11.1"
+  sha256 "3f31b820f53807dc0c0c58fe2314c4d4a2eb5c71f436cd831be3b6db3d4f52e7"
 
   url "https://github.com/iQeda/my-dashboard-app/releases/download/v#{version}/MyDashboard.app.tar.gz"
   name "MyDashboard"
@@ -12,11 +12,11 @@ cask "mydashboard" do
 
   app "MyDashboard.app"
 
-  caveats <<~EOS
-    This app is not signed with an Apple Developer ID.
-    macOS Gatekeeper may block it on first launch.
-    If needed, run: xattr -cr /Applications/MyDashboard.app
-  EOS
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/MyDashboard.app"],
+                   sudo: false
+  end
 
   zap trash: [
     "~/Library/Mobile Documents/com~apple~CloudDocs/my-dashboard-app",
