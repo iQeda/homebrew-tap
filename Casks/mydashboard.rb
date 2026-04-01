@@ -1,6 +1,6 @@
 cask "mydashboard" do
-  version "0.12.0"
-  sha256 "6ceeff608dce1a489e86d004ba73009c87e4562e6e51ab1312f1bb5c8d519751"
+  version "0.12.1"
+  sha256 "1585b9e4ff41bb65329eb61aabfe8ed9ed3c31153123a89d778202dfedcccbd9"
 
   url "https://github.com/iQeda/my-dashboard-app/releases/download/v#{version}/MyDashboard.app.tar.gz"
   name "MyDashboard"
