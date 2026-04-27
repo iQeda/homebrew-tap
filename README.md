@@ -14,3 +14,4 @@ brew install --cask mydashboard
 | Cask | Description |
 |------|-------------|
 | `mydashboard` | Mac app/site launcher dashboard |
+| `memorize` | Anki-compatible spaced repetition app, vocab-focused (Apple Silicon only) |
