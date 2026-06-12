@@ -1,8 +1,8 @@
 cask "memorize" do
-  version "0.1.0"
-  sha256 "b00a8e5403cfa33b34e4e36d61064380ec47b127df2c4c13848d3569555c2580"
+  version "0.6.2-20260612-0730-257e503"
+  sha256 "ab91381a431c14406161979d9bdb863111faf3cb2ae4a40a1ebf7b169a4df0d2"
 
-  url "https://github.com/iQeda/memorize/releases/download/v#{version}/memorize_#{version}_aarch64.dmg"
+  url "https://github.com/iQeda/memorize/releases/download/v#{version}/Memorize_0.6.2_aarch64.dmg"
   name "memorize"
   desc "Anki-compatible spaced repetition app, vocab-focused"
   homepage "https://github.com/iQeda/memorize"
@@ -10,13 +10,13 @@ cask "memorize" do
   depends_on macos: ">= :ventura"
   depends_on arch: :arm64
 
-  app "memorize.app"
+  app "Memorize.app"
 
   # Unsigned binary — strip the quarantine xattr so first launch doesn't
   # require a manual right-click → Open through Gatekeeper.
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/memorize.app"],
+                   args: ["-cr", "#{appdir}/Memorize.app"],
                    sudo: false
   end
 
