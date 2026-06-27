@@ -1,8 +1,8 @@
 cask "memorize" do
-  version "0.6.3-20260612-0800-6e31c25"
-  sha256 "459307574fb53fb6b98320bde213cbf17df9782efcecf4068cfb32a4c46383b6"
+  version "0.7.0-20260627-0959-dbd1d1b"
+  sha256 "36b5931f5f994fa4c65e7816d7f2952a80bcd017da411e6cefa061bb21cb4346"
 
-  url "https://github.com/iQeda/memorize/releases/download/v#{version}/Memorize_0.6.3_aarch64.dmg"
+  url "https://github.com/iQeda/memorize/releases/download/v#{version}/Memorize_0.7.0_aarch64.dmg"
   name "memorize"
   desc "Anki-compatible spaced repetition app, vocab-focused"
   homepage "https://github.com/iQeda/memorize"
